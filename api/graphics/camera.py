@@ -33,4 +33,9 @@ class Camera:
         return Point(x, y)
 
     def project(self, point):
-        return self.view.project(point, source_pos=self.anchor.position)
+        px, py = Vector2(*v_mul(point, self.ppt)).to_int()
+        ax, ay = Vector2(*v_mul(self.anchor.position, self.ppt)).to_int()
+        vx, vy = Vector2(*v_mul(self.view.source_off, self.ppt)).to_int()
+        dx, dy = Vector2(*v_mul(self.view.source_dim, self.ppt)).to_int()
+        # TODO This works great, move it somewhere appropriate
+        return Point(px-ax-vx, dy-(py-ay-vy))

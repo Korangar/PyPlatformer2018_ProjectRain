@@ -25,7 +25,7 @@ if __name__ == "__main__":
     scene.change_active_scene(test_scene0)
     graphics.add_camera(test_content0,
                         target_dim=Vector2(*graphics.get_display().resolution),
-                        pixels_per_tile=64,
+                        pixels_per_tile=32,
                         source_rel_off=Vector2(-.5, -.5))
     graphics.update()
     sleep(1)
