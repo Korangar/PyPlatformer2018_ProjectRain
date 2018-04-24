@@ -10,7 +10,6 @@ from ..scene import \
 from .display import PyGameDisplay
 from .camera import Camera, RenderTarget
 from .component import AutoGraphicsComponent, get_component
-from .projection import Projection
 
 from time import time
 from weakref import WeakKeyDictionary
@@ -74,7 +73,7 @@ def get_screen_setup(n_split: int=0) -> Sequence[RenderTarget]:
     if n_split == 2:
         relative_screen_positions.append((0, 1))
         relative_screen_positions.append((1, 1))
-    render_targets = (_create_subsurface((v_mul(s_size, r), s_size)) for r in relative_screen_positions)
+    render_targets = (_create_subsurface((Vector2(*v_mul(s_size, r)).to_int(), s_size.to_int())) for r in relative_screen_positions)
     # create initializers
     return tuple(render_targets)
 

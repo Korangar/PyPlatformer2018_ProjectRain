@@ -1,7 +1,7 @@
-from api.examples._example_content import *
-
+from api.examples.example_content import *
 
 if __name__ == "__main__":
+    from api.graphics.drawing import C_L_GRAY
     import api.graphics.system as graphics
     import api.scene.system as scene
     from api.events import yield_api_events
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     from api.prefab.debug.camera_marker import CameraMarker
     scene.add_content_to_scene(scene0, CameraMarker())
 
-    map_mid = v_mul(bg_manager.size, (0.5, 0.5))
+    map_mid = Point(*v_mul(bg_manager.size, (0.5, 0.5)))
     content0 = ExampleContent(position=Point(*v_add(map_mid, (0, 0))))
     content1 = ExampleContent(position=Point(*v_add(map_mid, (1, 1))))
     content2 = ExampleContent(position=Point(*v_add(map_mid, (1, 0))))
@@ -42,16 +42,10 @@ if __name__ == "__main__":
     scene.change_active_scene(scene0)
     scene.add_content_to_scene(scene0, content0)
     scene.add_content_to_scene(scene0, content1)
-    graphics.add_camera(content0,
-                        target_dim=half_screen,
-                        pixels_per_tile=32,
-                        source_rel_off=Vector2(-.5, -.5),
-                        target_rel_off=Vector2(0, 0))
-    graphics.add_camera(content1,
-                        target_dim=half_screen,
-                        pixels_per_tile=16,
-                        source_rel_off=Vector2(-.5, -.5),
-                        target_rel_off=Vector2(1, 0))
+    test_ppt = (32, 16)
+    for n, r in enumerate(graphics.get_screen_setup(1)):
+        c = Camera(map_mid, "camera {}".format(n), r, pixels_per_tile=test_ppt[n])
+        scene.add_content_to_scene(scene0, c)
 
     seconds = 5
     delta_time = 1.0/60
@@ -68,27 +62,14 @@ if __name__ == "__main__":
     sleep(1)
     yield_api_events()
 
-    graphics.clear_cameras()
-    graphics.add_camera(content0,
-                        target_dim=quad_screen,
-                        pixels_per_tile=64,
-                        source_rel_off=Vector2(-.5, -.5),
-                        target_rel_off=Vector2(0, 0))
-    graphics.add_camera(content1,
-                        target_dim=quad_screen,
-                        pixels_per_tile=32,
-                        source_rel_off=Vector2(-.5, -.5),
-                        target_rel_off=Vector2(1, 0))
-    graphics.add_camera(content2,
-                        target_dim=quad_screen,
-                        pixels_per_tile=16,
-                        source_rel_off=Vector2(-.5, -.5),
-                        target_rel_off=Vector2(0, 1))
-    graphics.add_camera(content3,
-                        target_dim=quad_screen,
-                        pixels_per_tile=8,
-                        source_rel_off=Vector2(-.5, -.5),
-                        target_rel_off=Vector2(1, 1))
+    for c in graphics.get_cameras():
+        scene.remove_content_from_scene(c.scene, c)
+
+    test_ppt = (64, 32, 16, 8)
+    for n, r in enumerate(graphics.get_screen_setup(2)):
+        c = Camera(map_mid, "camera {}".format(n), r, pixels_per_tile=test_ppt[n])
+        scene.add_content_to_scene(scene0, c)
+
     graphics.update()
     sleep(1)
     yield_api_events()

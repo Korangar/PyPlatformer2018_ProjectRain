@@ -29,8 +29,7 @@ class CameraMarkerGraphics(AutoGraphicsComponent):
         i = get_cameras().index(camera)
         txt = "'{}', {}".format(camera.cam_id, camera)
         self.font.render_to(surf=camera.render_target,
-                            dest=self.target.offset_row1,
-                            size=self.target.size,
+                            dest=camera.screen_point(self.target.offset_row1),
                             fgcolor=self.target.colors[i],
                             bgcolor=C_BLACK,
                             text=txt)
@@ -38,7 +37,7 @@ class CameraMarkerGraphics(AutoGraphicsComponent):
         if camera.scene:
             txt = "@ '{}', {}".format(camera.scene.name, camera.scene)
         self.font.render_to(surf=camera.render_target,
-                            dest=self.target.offset_row2, size=self.target.size,
+                            dest=camera.screen_point(self.target.offset_row2),
                             fgcolor=self.target.colors[i],
                             bgcolor=C_BLACK,
                             text=txt)

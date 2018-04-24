@@ -1,4 +1,5 @@
 from ..utilities.geometry import Point
+from ..utilities.vector import v_add
 from ..scene.content import SceneContent
 
 from .projection import Projection, calculate_anchor
@@ -28,6 +29,14 @@ class Camera(SceneContent):
 
     def in_view(self, p: Point) -> bool:
         return self.projection.in_view(p, self.position)
+
+    def screen_point(self, p: Point) -> Tuple[int, int]:
+        x, y = p
+        dx, dy = self.projection.dimension
+        return (x+dx) % dx, (y+dy) % dy
+
+    def view_origin(self):
+        return v_add(self.position, self.projection.anchor)
 
     def project(self, p: Point) -> Point:
         return self.projection.project(p, self.position)

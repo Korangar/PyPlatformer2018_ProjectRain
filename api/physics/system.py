@@ -18,7 +18,7 @@ _context_cache: Dict[SceneObject,
 _active_context: Dict[SceneContent, PhysicsInstruction] = None
 
 _ups_counter: RateTracker = RateTracker(smoothing_factor=0.1)
-_ups_last_measurement: float = time()
+_ups_next_measurement: float = time() + 1
 
 
 # -- public --
@@ -38,12 +38,11 @@ def cache_active_context() -> None:
 
 def update(delta_time: float):
     # public
-    global _ups_last_measurement
-    now = time()
+    global _ups_next_measurement
     _ups_counter.increment()
-    if now >= (_ups_last_measurement + 1):
+    if time() >= _ups_next_measurement:
         _ups_counter.measure()
-        _ups_last_measurement = now
+        _ups_next_measurement += 1
         print("ups: {:2f}".format(_ups_counter.rate))
 
     # TODO maximize CPU, try multiprocess
@@ -93,10 +92,14 @@ def _handle_content_added(msg: SceneContent):
 def _handle_content_removed(msg: SceneContent):
     # remove from active scene or cached context if scene is cached
     if msg.scene == get_active_scene():
-        del _active_context[msg]
+        context = _active_context
     elif msg.scene in _context_cache:
-        instructions = _context_cache[msg.scene]
-        del instructions[msg]
+        context = _context_cache[msg.scene]
+    else:
+        return None
+
+    if msg in context:
+        del context[msg]
 
 
 # EventHandler assignment

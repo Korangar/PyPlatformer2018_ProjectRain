@@ -1,4 +1,4 @@
-from api.examples._example_content import *
+from api.examples.example_content import *
 
 if __name__ == "__main__":
     import api.graphics.system as graphics

@@ -1,8 +1,9 @@
 from api.scene import SceneContent
 from api.utilities.geometry import Point
 from api.utilities.vector import *
-from api.graphics import AutoGraphicsComponent, Camera, graphics_instruction
-from api.graphics import f_default, RGB, C_BLACK, C_SOMETHING
+from api.graphics.component import AutoGraphicsComponent, graphics_for
+from api.graphics.drawing import f_default, RGB, C_BLACK, C_SOMETHING
+from api.graphics.camera import Camera
 
 from api.graphics import get_rate as fps_rate
 from api.physics import get_rate as ups_rate
@@ -16,8 +17,8 @@ class FpsOverlay(SceneContent):
         self.color = color
 
 
-@graphics_instruction(FpsOverlay)
-class FpsOverlayGraphics(AutoGraphicsComponent[FpsOverlay]):
+@graphics_for(FpsOverlay)
+class FpsOverlayGraphics(AutoGraphicsComponent):
     def __init__(self, target: FpsOverlay):
         super().__init__(target)
         from math import inf
@@ -26,7 +27,7 @@ class FpsOverlayGraphics(AutoGraphicsComponent[FpsOverlay]):
 
     def draw(self, camera: Camera) -> None:
         # TODO Draw this as an overlay
-        self.font.render_to(surf=camera.target,
+        self.font.render_to(surf=camera.render_target,
                             dest=self.target.offset,
                             fgcolor=self.target.color,
                             bgcolor=C_BLACK,

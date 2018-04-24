@@ -25,14 +25,15 @@ if __name__ == "__main__":
     cam_anchor = scene_system.SceneContent()
     scene_system.add_content_to_scene(start_scene, cam_anchor)
 
-    from api.prefab.ui import Text
+    from api.prefab.ui.text import Text
     text = Text()
     scene_system.add_content_to_scene(start_scene, text)
 
     scene_system.change_active_scene(start_scene)
-    from api.examples.split_screen import split_screen
-    for cam in split_screen(cam_anchor):
-        graphics_system.add_camera(**cam)
+    from api.utilities.geometry import Point
+    for target in graphics_system.get_screen_setup(0):
+        c = graphics_system.Camera(Point(0, 0), "Main Camera", target)
+        scene_system.add_content_to_scene(start_scene, c)
 
     # game loop
     last_update = time_ms()
