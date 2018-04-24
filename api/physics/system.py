@@ -44,6 +44,7 @@ def update(delta_time: float):
     if now >= (_ups_last_measurement + 1):
         _ups_counter.measure()
         _ups_last_measurement = now
+        print("ups: {:2f}".format(_ups_counter.rate))
 
     # TODO maximize CPU, try multiprocess
 

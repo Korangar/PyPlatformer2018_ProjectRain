@@ -1,5 +1,5 @@
 from ...utilities.geometry import Point
-from ...graphics.instruction import graphics_instruction
+from ...graphics.instruction import graphics_for
 
 import api.graphics.system as graphics_system
 import api.scene as scene_system
@@ -12,8 +12,8 @@ class TestContent(scene_system.SceneContent):
         super().__init__(position)
 
 
-@graphics_instruction(TestContent)
-class ExampleContentGraphics(graphics_system.GraphicsInstruction[TestContent]):
+@graphics_for(TestContent)
+class ExampleContentGraphics(graphics_system.AutoGraphicsComponent[TestContent]):
     def draw(self, camera) -> None:
         pass
 

@@ -1,8 +1,8 @@
+import pygame.freetype as freetype
+import pygame.gfxdraw as gfxdraw
+import pygame.image as image
+import pygame.transform as transform
 from pygame import Surface
-from pygame import gfxdraw
-from pygame import image
-from pygame import transform
-from pygame import freetype
 
 import typing
 

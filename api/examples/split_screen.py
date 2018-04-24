@@ -4,7 +4,8 @@ from api.scene import SceneContent
 from typing import *
 
 
-def split_screen(*anchors: SceneContent, ppt: int=32) -> Iterator:
+def split_screen(anchors: int=1, ppt: int=32) -> Iterator:
+    assert 1 <= anchors <= 4
     dim = get_display().resolution
     if len(anchors) > 2:
         dim = Vector2(*v_mul(dim, Vector2(0.5, 0.5)))
@@ -14,8 +15,7 @@ def split_screen(*anchors: SceneContent, ppt: int=32) -> Iterator:
                Vector2(1, 0),
                Vector2(0, 1),
                Vector2(1, 1))
-    return ({'anchor': anchor,
-             'target_dim': dim,
+    return ({'anchor': Vector2(-.5, -.5),
+             'dimension': dim,
              'pixels_per_tile': ppt,
-             'source_rel_off': Vector2(-.5, -.5),
-             'target_rel_off': offsets[i]} for i, anchor in enumerate(anchors))
+             'screen_position': offsets[i]} for i, anchor in enumerate(anchors))

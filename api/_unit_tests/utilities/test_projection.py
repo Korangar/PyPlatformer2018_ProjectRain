@@ -1,5 +1,4 @@
 import unittest
-from api.utilities.projection import *
 
 
 class ProjectionTest(unittest.TestCase):

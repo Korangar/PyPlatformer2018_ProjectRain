@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     scene0: scene.SceneObject = scene.SceneObject()
 
-    from api.examples.tile_grid_renderer import *
+    from api.prefab.background.tile_grid_renderer import *
     t_wall = Tile("Wall", {"color": C_L_GRAY})
     t_air = Tile("Air", {})
     tile_map = [[t_wall] * 150] + \
@@ -27,11 +27,11 @@ if __name__ == "__main__":
     bg_manager = TileGridRenderer(tile_map, 32)
     scene.add_content_to_scene(scene0, bg_manager)
 
-    from api.examples.fps_overlay import FpsOverlay
+    from api.prefab.debug.fps_overlay import FpsOverlay
     scene.add_content_to_scene(scene0, FpsOverlay(Vector2(5, 5), (255, 0, 0)))
 
-    from api.examples.camera_debug_marker import CameraDebugMarker
-    scene.add_content_to_scene(scene0, CameraDebugMarker())
+    from api.prefab.debug.camera_marker import CameraMarker
+    scene.add_content_to_scene(scene0, CameraMarker())
 
     map_mid = v_mul(bg_manager.size, (0.5, 0.5))
     content0 = ExampleContent(position=Point(*v_add(map_mid, (0, 0))))

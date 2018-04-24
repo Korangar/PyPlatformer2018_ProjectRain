@@ -45,7 +45,7 @@ def add_content_to_scene(scene: SceneObject, content: SceneContent) -> None:
 
 
 def remove_content_from_scene(scene: SceneObject, *content: SceneContent):
-    # get the content that is in the scene
+    # get the prefab that is in the scene
     intersection = scene.content.intersection(content)
     # remove it from the scene
     scene.content.difference_update(intersection)

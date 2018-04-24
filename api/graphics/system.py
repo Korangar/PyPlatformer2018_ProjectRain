@@ -1,47 +1,43 @@
 # contextual graphics system
-from time import time
-from typing import *
-from weakref import WeakKeyDictionary
-
-from api.measurement.rate_tracker import RateTracker
-from ._pygame_display import PyGameDisplay
-from ._pygame_drawing import gfxdraw, C_RED, C_BLUE, C_GREEN, C_YELLOW
-from .camera import Camera
-from .instruction import GraphicsInstruction, get_instruction
+from ..utilities.vector import *
+from ..measurement.rate_tracker import RateTracker
 from ..scene import SceneContent, SceneObject, get_active_scene
 from ..scene import \
     on_active_scene_changed, \
     on_scene_content_added, \
     on_scene_content_removed
-from ..utilities.projection import Projection
-from ..utilities.vector import *
+
+from .display import PyGameDisplay
+from .camera import Camera, RenderTarget
+from .component import AutoGraphicsComponent, get_component
+from .projection import Projection
+
+from time import time
+from weakref import WeakKeyDictionary
 
 _display: PyGameDisplay = None
 
 _context_cache: Dict[SceneObject,
                      Tuple[List[Camera],
                            Dict[SceneContent,
-                                GraphicsInstruction]]] = WeakKeyDictionary()
+                                AutoGraphicsComponent]]] = WeakKeyDictionary()
 
 _active_cameras: List[Camera] = None
-_active_sorting: List[GraphicsInstruction] = None
-_active_context: Dict[SceneContent, GraphicsInstruction] = None
+_active_sorting: List[AutoGraphicsComponent] = None
+_active_context: Dict[SceneContent, AutoGraphicsComponent] = None
 
 _fps_counter: RateTracker = RateTracker()
 _fps_last_measurement: float = time()
 
 
-# -- public --
-#
+# --- public ---
 
-# Getters
+# - Getter
 def get_display() -> PyGameDisplay:
-    # public
     return _display
 
 
-def get_cameras() -> List[Camera]:
-    # public
+def get_cameras() -> Sequence[Camera]:
     return _active_cameras
 
 
@@ -49,62 +45,41 @@ def get_rate() -> float:
     return _fps_counter.rate
 
 
+# - Initializer
 def init_display(resolution: Tuple[int, int]=(0, 0), depth: int = 0, full_screen: bool = True):
-    # public
     global _display
     _display = PyGameDisplay(resolution, depth, full_screen)
 
 
 def cache_active_context() -> None:
-    # public
     scene = get_active_scene()
     _context_cache[scene] = [_active_cameras, _active_context]
 
 
-def add_camera(anchor: SceneContent,
-               target_dim: Vector2,
-               pixels_per_tile: int= 32,
-               source_rel_off: Vector2= Vector2(0, 0),
-               target_rel_off: Vector2= Vector2(0, 0),
-               cam_id: str=""):
-    # public
-    source_dim = Vector2(*v_div(target_dim, pixels_per_tile))
-    source_off = Vector2(*v_mul(source_dim, source_rel_off))
-    target_off = Vector2(*v_mul(target_dim, target_rel_off))
-    # target offset not required in projection, because of the subsurface
-    projection = Projection(source_dim=source_dim,
-                            source_off=source_off,
-                            target_dim=target_dim,
-                            target_off=Vector2(0, 0),
-                            inverse_h=False,
-                            inverse_v=True)
-    render_target = _display.canvas.subsurface((target_off, target_dim))
-    _active_cameras.append(Camera(cam_id, projection, anchor, render_target, pixels_per_tile))
+def get_screen_setup(n_split: int=0) -> Sequence[RenderTarget]:
+    # creates initializers for any usual screen setup
+    assert 0 <= n_split <= 2
+    # determine screen and view size depending on the number of splits
+    if n_split == 2:
+        split = 0.5, 0.5
+    elif n_split == 1:
+        split = 0.5, 1.0
+    else:
+        split = 1.0, 1.0
+    s_size = Vector2(*v_mul(_display.resolution, split))
+    # create render targets
+    relative_screen_positions = [(0, 0)]
+    if n_split == 1:
+        relative_screen_positions.append((1, 0))
+    if n_split == 2:
+        relative_screen_positions.append((0, 1))
+        relative_screen_positions.append((1, 1))
+    render_targets = (_create_subsurface((v_mul(s_size, r), s_size)) for r in relative_screen_positions)
+    # create initializers
+    return tuple(render_targets)
 
 
-# Update
-
-def update():
-    # public
-    global _fps_last_measurement
-    now = time()
-    _fps_counter.increment()
-    if now >= (_fps_last_measurement + 1):
-        _fps_counter.measure()
-        _fps_last_measurement = now
-
-    # TODO maximize CPU, make rendering multiprocess
-    # TODO need proper layered rendering
-
-    for camera in _active_cameras:
-        for instruction in _active_sorting:
-            instruction.draw(camera)
-
-    _display.flip()
-
-
-# Cleanup
-
+# - Reset
 def clear_cache() -> None:
     _context_cache.clear()
 
@@ -117,50 +92,102 @@ def clear_context() -> None:
     _active_context.clear()
 
 
-# -- private --
-#
+# - Update
+def update():
+    global _fps_last_measurement
+    now = time()
+    _fps_counter.increment()
+    if now >= (_fps_last_measurement + 1):
+        _fps_counter.measure()
+        _fps_last_measurement = now
+        print("fps: {:2f}".format(_fps_counter.rate))
 
-# EventHandlers
+    # TODO maximize CPU, make rendering multiprocess
+    for c in _active_cameras:
+        c.render(_active_sorting)
 
+    _display.flip()
+
+
+# --- private ---
+
+def _create_subsurface(rect):
+    return _display.canvas.subsurface(rect)
+
+
+# - EventHandlers
 def _handle_scene_change(msg: SceneObject):
     global _active_context, _active_cameras, _active_sorting
     if msg in _context_cache:
         # activate context from cache
         _active_cameras, _active_context = _context_cache[msg]
     else:
-        _active_cameras = list()
-        _active_context = {c: get_instruction(c) for c in msg.content if get_instruction(c)}
+        _active_cameras = [c for c in msg.content if isinstance(c, Camera)]
+        _active_context = {c: get_component(c) for c in msg.content if get_component(c)}
     # assemble an initial sorting
     _active_sorting = list(_active_context.values())
     _active_sorting.sort(key=lambda s: s.sorting)
 
 
 def _handle_content_added(msg: SceneContent):
-    if msg.scene == get_active_scene():
-        # make instruction for msg and add instruction to context
-        instruction = get_instruction(msg)
-        if instruction:
-            _active_context[msg] = instruction
-            # update active sorting
-            _active_sorting.append(instruction)
-            _active_sorting.sort(key=lambda s: s.sorting)
+    in_active_scene = msg.scene == get_active_scene()
+
+    # select target context
+    if in_active_scene:
+        # active context
+        cameras, context = _active_cameras, _active_context
     elif msg.scene in _context_cache:
-        # update the cached context with msg
-        cameras, instructions = _context_cache[msg.scene]
-        instructions[msg] = get_instruction(msg)
+        # not active but cached context
+        cameras, context = _context_cache[msg.scene]
+    else:
+        # not in any relevant context
+        return None
+
+    # check if it is a camera
+    if isinstance(msg, Camera):
+        # todo hand over some rendering target
+        _active_cameras.append(msg)
+
+    # look for a component for content
+    component = get_component(msg)
+    if component:
+        # add component to context
+        context[msg] = component
+        # update sorting if necessary
+        if in_active_scene:
+            _active_sorting.append(component)
+            _active_sorting.sort(key=lambda s: s.sorting)
 
 
 def _handle_content_removed(msg: SceneContent):
-    if msg.scene == get_active_scene():
-        _active_sorting.remove(_active_context[msg])
-        del _active_context[msg]
+    in_active_scene = msg.scene == get_active_scene()
+
+    # select target context
+    if in_active_scene:
+        # active context
+        cameras, context = _active_cameras, _active_context
     elif msg.scene in _context_cache:
-        cameras, instructions = _context_cache[msg.scene]
-        del instructions[msg]
+        # not active but cached context
+        cameras, context = _context_cache[msg.scene]
+    else:
+        # not in any relevant context
+        return None
+
+    # check if it is a camera
+    if isinstance(msg, Camera):
+        cameras.remove(msg)
+        # todo other camera stuff
+
+    # look for a component
+    if msg in context:
+        # remove component from context
+        del context[msg]
+        # update sorting if necessary
+        if in_active_scene:
+            _active_sorting.remove(context[msg])
 
 
 # EventHandler assignment
-
 on_active_scene_changed.observe(_handle_scene_change)
 on_scene_content_added.observe(_handle_content_added)
 on_scene_content_removed.observe(_handle_content_removed)

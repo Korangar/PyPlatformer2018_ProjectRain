@@ -1,41 +1,37 @@
 from ..utilities.geometry import Point
-from ..utilities.vector import *
+from ..scene.content import SceneContent
+
+from .projection import Projection, calculate_anchor
+from .component import AutoGraphicsComponent
+from .drawing import Surface
+
+from typing import *
 
 
-class Camera:
-    def __init__(self, cam_id, view, anchor, target, ppt):
+RenderTarget = Surface
+
+
+class Camera(SceneContent):
+    def __init__(self, position: Point, cam_id: str, render_target: RenderTarget,
+                 rel_anchor: Tuple[float, float]=(0.5, 0.5),
+                 pixels_per_tile: int=32,
+                 inverse_h: bool=False,
+                 inverse_v: bool=True):
+        super().__init__(position)
+        self.projection = Projection(anchor=calculate_anchor(rel_anchor, render_target.get_size(), pixels_per_tile),
+                                     dimension=render_target.get_size(),
+                                     pixels_per_tile=pixels_per_tile,
+                                     inverse_h=inverse_h,
+                                     inverse_v=inverse_v)
+        self.render_target = render_target
         self.cam_id = cam_id
-        self.view = view
-        self.anchor = anchor
-        self.target = target
-        self.ppt = ppt
 
-    def is_in_view(self, point):
-        return self.view.inside_source(point, self.anchor.position)
+    def in_view(self, p: Point) -> bool:
+        return self.projection.in_view(p, self.position)
 
-    def is_on_screen(self, point):
-        return self.view.inside_target(point)
+    def project(self, p: Point) -> Point:
+        return self.projection.project(p, self.position)
 
-    def get_view_origin(self):
-        return v_add(self.view.source_off, self.anchor.position)
-
-    def get_screen_point(self, x, y):
-        offset = self.target.get_offset()
-        dimension = self.target.get_size()
-        if isinstance(x, int):
-            x = offset[0] + (x + dimension[0]) % dimension[0]
-        else:
-            x = offset[0] + x * dimension[0]
-        if isinstance(y, int):
-            y = offset[1] + (y + dimension[1]) % dimension[1]
-        else:
-            y = offset[1] + y * dimension[1]
-        return Point(x, y)
-
-    def project(self, point):
-        px, py = Vector2(*v_mul(point, self.ppt)).to_int()
-        ax, ay = Vector2(*v_mul(self.anchor.position, self.ppt)).to_int()
-        vx, vy = Vector2(*v_mul(self.view.source_off, self.ppt)).to_int()
-        dx, dy = Vector2(*v_mul(self.view.source_dim, self.ppt)).to_int()
-        # TODO This works great, move it somewhere appropriate
-        return Point(px-ax-vx, dy-(py-ay-vy))
+    def render(self, components: Iterable[AutoGraphicsComponent]):
+        for c in components:
+            c.draw(self)

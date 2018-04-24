@@ -1,7 +1,7 @@
 from api.scene import SceneContent
 from api.utilities.geometry import Point
 from api.utilities.vector import *
-from api.graphics import GraphicsInstruction, Camera, graphics_instruction
+from api.graphics import AutoGraphicsComponent, Camera, graphics_instruction
 from api.graphics import f_default, RGB, C_BLACK, C_SOMETHING
 
 from api.graphics import get_rate as fps_rate
@@ -17,7 +17,7 @@ class FpsOverlay(SceneContent):
 
 
 @graphics_instruction(FpsOverlay)
-class FpsOverlayGraphics(GraphicsInstruction[FpsOverlay]):
+class FpsOverlayGraphics(AutoGraphicsComponent[FpsOverlay]):
     def __init__(self, target: FpsOverlay):
         super().__init__(target)
         from math import inf

@@ -11,9 +11,6 @@ class PyGameDisplay:
         if full_screen:
             from pygame import FULLSCREEN
             flags += FULLSCREEN
-
         self.canvas: _pygame.Surface = _pygame.display.set_mode(resolution, flags, depth)
         self.resolution: Tuple[int, int] = self.canvas.get_size()
-
-    def flip(self):
-        _pygame.display.flip()
+        self.flip: Callable[[], None] = _pygame.display.flip

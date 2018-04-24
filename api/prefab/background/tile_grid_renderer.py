@@ -1,8 +1,8 @@
-from api.scene import SceneContent
-from api.graphics import Camera, GraphicsInstruction, graphics_instruction
+from api.graphics import Camera, AutoGraphicsComponent
+from api.graphics import C_D_GRAY, C_BLACK
 from api.graphics import Surface, gfxdraw, transform
-from api.graphics import C_L_GRAY, C_D_GRAY, C_BLACK
-from api.utilities.projection import *
+from api.graphics.projection import *
+from api.scene import SceneContent
 from api.utilities.tile_grid import Grid, Tile
 from api.utilities.vector import *
 
@@ -16,7 +16,7 @@ class TileGridRenderer(SceneContent):
 
 
 @graphics_instruction(TileGridRenderer)
-class TileGridGraphics(GraphicsInstruction[TileGridRenderer]):
+class TileGridGraphics(AutoGraphicsComponent[TileGridRenderer]):
     def __init__(self, target: TileGridRenderer):
         super().__init__(target)
         self.target: TileGridRenderer
