@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     scene_system.change_active_scene(start_scene)
     from api.utilities.geometry import Point
-    for target in graphics_system.get_screen_setup(0):
+    for target in graphics_system.get_camera_setup(0):
         c = graphics_system.Camera(Point(0, 0), "Main Camera", target)
         scene_system.add_content_to_scene(start_scene, c)
 

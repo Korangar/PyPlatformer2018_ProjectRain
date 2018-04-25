@@ -7,25 +7,30 @@ from api.utilities.vector import *
 
 
 class TileGridRenderer(SceneContent):
-    def __init__(self, tile_grid: Grid[Tile], pixels: int) -> None:
+    def __init__(self, default_resolution: int=32) -> None:
         super().__init__()
-        self.tile_grid = tile_grid
-        self.size = Vector2(len(self.tile_grid), len(self.tile_grid[0]))
-        self.ppt = pixels
+        self.ppt = default_resolution
+
+    def tile_grid(self):
+        return self.scene.tile_grid
+
+    def grid_size(self):
+        tg = self.tile_grid()
+        return Vector2(len(tg), len(tg[0]))
 
 
 @graphics_for(TileGridRenderer)
-class TileGridGraphics(AutoGraphicsComponent):
+class TileGridGraphics(AutoGraphicsComponent[TileGridRenderer]):
     def __init__(self, target: TileGridRenderer):
         super().__init__(target)
-        self.target: TileGridRenderer
+        self.sorting = -math.inf
         self.bg_prepared: Surface = None
         self.prepare_background()
 
     def prepare_background(self):
-        target_dim = Vector2(*v_mul(self.target.size, self.target.ppt))
+        target_dim = Vector2(*v_mul(self.target.grid_size(), self.target.ppt))
         self.bg_prepared = Surface(target_dim)
-        for x, col in enumerate(self.target.tile_grid):
+        for x, col in enumerate(self.target.tile_grid()):
             for y, pos in enumerate(col):
                 rect = (v_mul((x, y), self.target.ppt), (self.target.ppt, self.target.ppt))
                 color = pos.tile_info.get("color", C_BLACK)

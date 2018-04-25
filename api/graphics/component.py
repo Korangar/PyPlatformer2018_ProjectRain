@@ -1,7 +1,10 @@
+from typing import *
+
+_Content = TypeVar("_Content")
 
 
 # One instance of GraphicsInstruction is responsible for drawing one single instance( target ) of _Content Type
-class AutoGraphicsComponent:
+class AutoGraphicsComponent(Generic[_Content]):
     def __init__(self, target):
         self.sorting = 1
         self.target = target

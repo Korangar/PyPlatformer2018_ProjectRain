@@ -55,7 +55,7 @@ def cache_active_context() -> None:
     _context_cache[scene] = [_active_cameras, _active_context]
 
 
-def get_screen_setup(n_split: int=0) -> Sequence[RenderTarget]:
+def get_camera_setup(n_split: int=0) -> Iterator[RenderTarget]:
     # creates initializers for any usual screen setup
     assert 0 <= n_split <= 2
     # determine screen and view size depending on the number of splits
@@ -68,14 +68,15 @@ def get_screen_setup(n_split: int=0) -> Sequence[RenderTarget]:
     s_size = Vector2(*v_mul(_display.resolution, split))
     # create render targets
     relative_screen_positions = [(0, 0)]
-    if n_split == 1:
+    if n_split >= 1:
         relative_screen_positions.append((1, 0))
-    if n_split == 2:
+    if n_split >= 2:
         relative_screen_positions.append((0, 1))
         relative_screen_positions.append((1, 1))
-    render_targets = (_create_subsurface((Vector2(*v_mul(s_size, r)).to_int(), s_size.to_int())) for r in relative_screen_positions)
-    # create initializers
-    return tuple(render_targets)
+
+    temp = (_create_subsurface((Vector2(*v_mul(s_size, r)).to_int(), s_size.to_int()))
+            for r in relative_screen_positions)
+    return temp
 
 
 # - Reset
@@ -179,11 +180,11 @@ def _handle_content_removed(msg: SceneContent):
 
     # look for a component
     if msg in context:
-        # remove component from context
-        del context[msg]
         # update sorting if necessary
         if in_active_scene:
             _active_sorting.remove(context[msg])
+        # remove component from context
+        del context[msg]
 
 
 # EventHandler assignment

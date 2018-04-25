@@ -3,8 +3,9 @@ import weakref
 
 
 class SceneObject:
-    def __init__(self, name=''):
+    def __init__(self, name='', tile_grid=None):
         self.name = name
+        self.tile_grid = tile_grid
         self.content = set()
         self.agents = weakref.WeakSet()
         self.players = weakref.WeakSet()

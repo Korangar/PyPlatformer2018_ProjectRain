@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     # create a screen and some render targets for the cameras
     graphics.init_display(full_screen=True)
-    render_targets = graphics.get_screen_setup(n_split=0)
+    render_targets = graphics.get_camera_setup(n_split=0)
 
     # create scenes
     scene0: scene.SceneObject = scene.SceneObject()

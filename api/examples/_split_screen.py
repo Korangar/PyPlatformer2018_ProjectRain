@@ -12,9 +12,7 @@ if __name__ == "__main__":
     half_screen = Vector2(*v_mul(graphics.get_display().resolution, Vector2(0.5, 1)))
     quad_screen = Vector2(*v_mul(graphics.get_display().resolution, Vector2(0.5, 0.5)))
 
-    scene0: scene.SceneObject = scene.SceneObject()
-
-    from api.prefab.background.tile_grid_renderer import *
+    from api.utilities.tile_grid import Tile
     t_wall = Tile("Wall", {"color": C_L_GRAY})
     t_air = Tile("Air", {})
     tile_map = [[t_wall] * 150] + \
@@ -24,8 +22,7 @@ if __name__ == "__main__":
                [[t_wall] * 150] + \
                [[t_wall] + [t_air] * 148 + [t_wall]] * 50 + \
                [[t_wall] * 150]
-    bg_manager = TileGridRenderer(tile_map, 32)
-    scene.add_content_to_scene(scene0, bg_manager)
+    scene0: scene.SceneObject = scene.SceneObject(name="scene0", tile_grid=tile_map)
 
     from api.prefab.debug.fps_overlay import FpsOverlay
     scene.add_content_to_scene(scene0, FpsOverlay(Vector2(5, 5), (255, 0, 0)))
@@ -33,7 +30,11 @@ if __name__ == "__main__":
     from api.prefab.debug.camera_marker import CameraMarker
     scene.add_content_to_scene(scene0, CameraMarker())
 
-    map_mid = Point(*v_mul(bg_manager.size, (0.5, 0.5)))
+    from api.prefab.background.tile_grid_renderer import *
+    tgr = TileGridRenderer()
+    scene.add_content_to_scene(scene0, tgr)
+
+    map_mid = Point(*v_mul(tgr.grid_size(), (0.5, 0.5)))
     content0 = ExampleContent(position=Point(*v_add(map_mid, (0, 0))))
     content1 = ExampleContent(position=Point(*v_add(map_mid, (1, 1))))
     content2 = ExampleContent(position=Point(*v_add(map_mid, (1, 0))))
@@ -43,7 +44,7 @@ if __name__ == "__main__":
     scene.add_content_to_scene(scene0, content0)
     scene.add_content_to_scene(scene0, content1)
     test_ppt = (32, 16)
-    for n, r in enumerate(graphics.get_screen_setup(1)):
+    for n, r in enumerate(graphics.get_camera_setup(1)):
         c = Camera(map_mid, "camera {}".format(n), r, pixels_per_tile=test_ppt[n])
         scene.add_content_to_scene(scene0, c)
 
@@ -62,11 +63,10 @@ if __name__ == "__main__":
     sleep(1)
     yield_api_events()
 
-    for c in graphics.get_cameras():
-        scene.remove_content_from_scene(c.scene, c)
+    scene.remove_content_from_scene(graphics.get_active_scene(), *graphics.get_cameras())
 
     test_ppt = (64, 32, 16, 8)
-    for n, r in enumerate(graphics.get_screen_setup(2)):
+    for n, r in enumerate(graphics.get_camera_setup(2)):
         c = Camera(map_mid, "camera {}".format(n), r, pixels_per_tile=test_ppt[n])
         scene.add_content_to_scene(scene0, c)
 

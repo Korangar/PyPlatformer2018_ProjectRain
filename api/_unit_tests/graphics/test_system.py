@@ -1,5 +1,5 @@
 from ...utilities.geometry import Point
-from ...graphics.instruction import graphics_for
+from ...graphics.component import graphics_for
 
 import api.graphics.system as graphics_system
 import api.scene as scene_system
@@ -63,6 +63,15 @@ class MyTestCase(unittest.TestCase):
         # test cache clear
         graphics_system.clear_cache()
         self.assertFalse(self.scene0 in graphics_system._context_cache)
+
+    def test_screen_setup(self):
+        graphics_system.init_display()
+        r = tuple(graphics_system.get_camera_setup(0))
+        self.assertTrue(len(r), 1)
+        r = tuple(graphics_system.get_camera_setup(1))
+        self.assertTrue(len(r), 2)
+        r = tuple(graphics_system.get_camera_setup(2))
+        self.assertTrue(len(r), 4)
 
 
 if __name__ == '__main__':
