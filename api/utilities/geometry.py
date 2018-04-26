@@ -33,9 +33,12 @@ class Ray(NamedTuple):
     dir: Vector2
     len: float
 
-    def on_grid(self, grid: Grid[Tile]) -> Iterator[Tile]:
-        points = [v_add(self.pos, v_mul(self.dir, l)) for l in inclusive_range(self.len)]
-        return (Point(*p).on_grid(grid) for p in points)
+    def on_grid(self, grid: Grid[Tile]):
+        point = self.pos
+        for l in range(int(self.len)):
+            yield Point(*point).on_grid(grid), l
+            point = v_add(self.pos, self.dir)
+        yield self.end.on_grid(grid), self.len
 
 
 class Rectangle(NamedTuple):
@@ -74,7 +77,7 @@ class Rectangle(NamedTuple):
         if v_dir == 0:
             vertical = tuple()
         else:
-            if h_dir < 0:
+            if v_dir < 0:
                 side = self.min().y
                 _dir = Vector2(0, -1)
             else:
@@ -94,12 +97,12 @@ Shape = Union[Point, Circle, Ray, Rectangle]
 # creation helper for rays
 def create_ray(pos: Point, vec: Vector2, length: float=None) -> "Ray":
     if length is None:
-        end: Point = vec
+        end: Point = Point(*vec)
         delta: Vector = v_sub(end, pos)
         normal: Vector2 = Vector2(*v_norm(delta))
         length: float = v_len(delta)
     else:
-        end: Point = Vector2(*v_add(pos, v_mul(vec, length)))
+        end: Point = Point(*v_add(pos, v_mul(vec, length)))
         normal: Vector2 = vec
     return Ray(pos, end, normal, length)
 

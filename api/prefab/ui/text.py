@@ -6,9 +6,9 @@ from api.scene.content import *
 
 
 class Text(SceneContent):
-    def __init__(self, position: Point = (0, 0)) -> None:
+    def __init__(self, position: Point, text: str="Hello World!") -> None:
         super().__init__(position)
-        self.text = "Hello World!"
+        self.text = text
         self.f_color = (255, 255, 255)
         self.b_color = None
         self.size = 20
@@ -21,7 +21,8 @@ class TextGraphics(AutoGraphicsComponent):
         self.font = f_default(self.target.size)
 
     def draw(self, camera: Camera) -> None:
-        screen_pos = camera.project(self.target.position)
-        self.font.render_to(camera.render_target, screen_pos, self.target.text,
-                            fgcolor=self.target.f_color,
-                            bgcolor=self.target.b_color)
+        if camera.in_view(self.target.position):
+            screen_pos = camera.project(self.target.position)
+            self.font.render_to(camera.render_target, screen_pos, self.target.text,
+                                fgcolor=self.target.f_color,
+                                bgcolor=self.target.b_color)

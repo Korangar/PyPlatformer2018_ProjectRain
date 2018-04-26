@@ -4,7 +4,7 @@ from typing import *
 from weakref import WeakKeyDictionary
 
 from api.measurement.rate_tracker import RateTracker
-from .instruction import PhysicsInstruction, get_instruction
+from .component import AutoPhysicsComponent, get_instruction
 from ..scene import SceneContent, SceneObject, get_active_scene
 from ..scene import \
     on_active_scene_changed, \
@@ -13,11 +13,11 @@ from ..scene import \
 
 _context_cache: Dict[SceneObject,
                      Dict[SceneContent,
-                          PhysicsInstruction]] = WeakKeyDictionary()
+                          AutoPhysicsComponent]] = WeakKeyDictionary()
 
-_active_context: Dict[SceneContent, PhysicsInstruction] = None
+_active_context: Dict[SceneContent, AutoPhysicsComponent] = None
 
-_ups_counter: RateTracker = RateTracker(smoothing_factor=0.1)
+_ups_counter: RateTracker = RateTracker()
 _ups_next_measurement: float = time() + 1
 
 

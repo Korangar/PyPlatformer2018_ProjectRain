@@ -1,7 +1,6 @@
 from api.examples.example_content import *
 
 if __name__ == "__main__":
-    from api.graphics.drawing import C_L_GRAY
     import api.graphics.system as graphics
     import api.scene.system as scene
     from api.events import yield_api_events
@@ -9,20 +8,8 @@ if __name__ == "__main__":
 
     graphics.init_display(full_screen=True)
 
-    half_screen = Vector2(*v_mul(graphics.get_display().resolution, Vector2(0.5, 1)))
-    quad_screen = Vector2(*v_mul(graphics.get_display().resolution, Vector2(0.5, 0.5)))
-
-    from api.utilities.tile_grid import Tile
-    t_wall = Tile("Wall", {"color": C_L_GRAY})
-    t_air = Tile("Air", {})
-    tile_map = [[t_wall] * 150] + \
-               [[t_wall] + [t_air] * 148 + [t_wall]] * 50 + \
-               [[t_wall] * 150] + \
-               [[t_wall] + [t_air] * 148 + [t_wall]] * 48 + \
-               [[t_wall] * 150] + \
-               [[t_wall] + [t_air] * 148 + [t_wall]] * 50 + \
-               [[t_wall] * 150]
-    scene0: scene.SceneObject = scene.SceneObject(name="scene0", tile_grid=tile_map)
+    from api.examples.example_tile_grid import tile_map
+    scene0 = scene.SceneObject(name="scene0", tile_grid=tile_map)
 
     from api.prefab.debug.fps_overlay import FpsOverlay
     scene.add_content_to_scene(scene0, FpsOverlay(Vector2(5, 5), (255, 0, 0)))

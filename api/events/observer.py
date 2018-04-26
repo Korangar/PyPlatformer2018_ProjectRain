@@ -7,7 +7,7 @@ _Content = TypeVar("_Content")
 class Observer(Generic[_Content]):
     def __init__(self, name: str):
         self.name = name
-        self.observers: Set[Callable[[_Content], None]] = WeakSet()
+        self.observers: Set[(Callable[[_Content], None])] = WeakSet()
 
     def observe(self, *callback: Callable[[_Content], None]):
         self.observers.update(callback)

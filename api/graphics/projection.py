@@ -15,7 +15,7 @@ class Projection(NamedTuple):
         return Rectangle(Point(0, 0), self.dimension).intersect(self.project(point, view_offset))
 
     def project(self, point: Point, view_offset: Vector2=Vector2(0, 0)) -> Point:
-        view_origin = v_add(self.anchor, view_offset)
+        view_origin = self.view_origin(view_offset)
         x, y = v_mul(v_sub(point, view_origin), self.pixels_per_tile)
         if self.inverse_h:
             x = self.dimension[0] - x
@@ -32,6 +32,15 @@ class Projection(NamedTuple):
             y = - y
         return Vector2(x, y)
 
+    def view_origin(self, view_offset: Vector2=Vector2(0, 0)) -> Point:
+        return Point(*v_add(self.anchor, view_offset))
+
+    def view_dimension(self) -> Vector2:
+        return Vector2(*v_div(self.dimension, self.pixels_per_tile))
+
+    def view_rectangle(self, view_offset: Vector2=(0, 0)) -> Rectangle:
+        return Rectangle(Point(*v_add(self.anchor, view_offset)), Vector2(*self.view_dimension()))
+
 
 def calculate_anchor(rel_anchor: Tuple[float, float], dimension: Tuple[int, int], ppt: int) -> Vector2:
-    return Vector2(*v_div(v_mul(v_sub(rel_anchor, (1, 1)), dimension), ppt))
+    return Vector2(*v_mul(v_sub(rel_anchor, (1, 1)), v_div(dimension, ppt)))
