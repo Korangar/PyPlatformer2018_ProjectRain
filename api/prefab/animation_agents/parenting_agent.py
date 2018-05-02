@@ -1,11 +1,11 @@
-from ...scene.content import Agent, SceneContent
+from ...scene.content import Actor, SceneContent
 
 
-class ParentingAgent(Agent):
+class ParentingActor(Actor):
     def __init__(self, parent: SceneContent, child: SceneContent) -> None:
         super().__init__()
         self.parent = parent
         self.child = child
 
-    def update_agency(self, delta_time: float):
+    def update(self):
         self.child.position = self.parent.position

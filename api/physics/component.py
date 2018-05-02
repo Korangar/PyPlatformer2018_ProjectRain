@@ -16,7 +16,7 @@ class AutoPhysicsComponent(Generic[_Content]):
         self.velocity = Vector2(0, 0)
 
     @abc.abstractmethod
-    def update(self, delta_time: float) -> None:
+    def update(self) -> None:
         pass
 
 

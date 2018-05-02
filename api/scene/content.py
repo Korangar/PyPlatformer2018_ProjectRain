@@ -1,19 +1,15 @@
 from ..utilities.geometry import Point
-from ..events.observer import Observer
-
 from .scene_object import SceneObject
-
 from typing import *
 
 
 class SceneContent:
+    # todo clear timing related stuff on scene change
+
     def __init__(self, position=Point(0, 0)):
-        self._tags: Set[str] = set()
         self.scene: SceneObject = None
+        self._tags: Set[str] = set()
         self.position: Point = position
-        name = type(self).__name__
-        self.on_spawn: Observer[SceneContent] = Observer("{} spawned!".format(name))
-        self.on_erase: Observer[SceneContent] = Observer("{} erased!".format(name))
 
     def __repr__(self) -> str:
         return "<{}@{}>".format(super().__repr__(), self.scene)
@@ -21,18 +17,19 @@ class SceneContent:
     def get_tags(self) -> Set[str]:
         return self._tags
 
+    def get_scene_time(self) -> float:
+        return self.scene.current_time
 
-class Agent(SceneContent):
-    def __init__(self, position=Point(0, 0)):
-        super().__init__(position)
+    def spawn(self):
+        pass
 
-    def update_agency(self, delta_time: float) -> None:
+    def destroy(self):
         pass
 
 
-class Player(Agent):
+class Actor(SceneContent):
     def __init__(self, position=Point(0, 0)):
         super().__init__(position)
 
-    def update_will(self, delta_time: float) -> None:
+    def update(self) -> None:
         pass

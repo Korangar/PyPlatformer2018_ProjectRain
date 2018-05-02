@@ -3,6 +3,7 @@ import api.physics as physics_system
 import api.scene as scene_system
 from api.events import yield_api_events
 from api.measurement.time import time_ms
+from api.utilities.geometry import Point
 
 updates_per_sec = 30
 update_delay = 1000/updates_per_sec
@@ -26,7 +27,7 @@ if __name__ == "__main__":
     scene_system.add_content_to_scene(start_scene, cam_anchor)
 
     from api.prefab.ui.text import Text
-    text = Text()
+    text = Text(Point(0, 0))
     scene_system.add_content_to_scene(start_scene, text)
 
     scene_system.change_active_scene(start_scene)
@@ -52,10 +53,13 @@ if __name__ == "__main__":
             last_update += update_delay
             update_loops += 1
 
+            # set current time step
+            scene_system.set_delta_time(delta_time)
+
             # update physics
-            physics_system.update(delta_time)
+            physics_system.update()
             # update scene
-            scene_system.get_active_scene().update(delta_time)
+            scene_system.update()
         else:
             # timing
             update_loops = 0

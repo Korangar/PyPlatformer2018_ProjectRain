@@ -1,6 +1,6 @@
 from ..utilities.geometry import Point
 from ..utilities.vector import *
-from ..scene.content import Agent, SceneContent
+from ..scene.content import Actor, SceneContent
 
 from .projection import Projection, calculate_anchor
 from .component import AutoGraphicsComponent
@@ -12,7 +12,7 @@ from typing import *
 RenderTarget = Surface
 
 
-class Camera(Agent):
+class Camera(Actor):
     def __init__(self, position: Point, cam_id: str, render_target: RenderTarget,
                  rel_anchor: Tuple[float, float]=(0.5, 0.5),
                  pixels_per_tile: int=32,
@@ -56,7 +56,7 @@ class Camera(Agent):
         for c in components:
             c.draw(self)
 
-    def update_agency(self, delta_time: float):
+    def update(self):
         if self.follow_target:
             self.position = self.follow_target.position
         if self.grid_locks_view:

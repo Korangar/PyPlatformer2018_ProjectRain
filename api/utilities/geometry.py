@@ -12,7 +12,10 @@ class Point(NamedTuple):
     def to_int(self)->Tuple[int, int]:
         return int(self.x), int(self.y)
 
-    def on_grid(self, grid: Grid[Tile]) -> Tile:
+    def on_grid(self, grid:Grid[Tile]):
+        return 0 <= self.x <= len(grid) and 0 <= self.y <= len(grid[0])
+
+    def get_tile(self, grid: Grid[Tile]) -> Tile:
         x, y = self.to_int()
         return grid[x][y]
 
@@ -22,7 +25,7 @@ class Circle(NamedTuple):
     pos: Point
     rad: float
 
-    def on_grid(self, grid: Grid[Tile]) -> Iterator[Tile]:
+    def get_tiles(self, grid: Grid[Tile]) -> Iterator[Tile]:
         raise Exception("Not yet implemented!")  # todo
 
 
@@ -33,12 +36,15 @@ class Ray(NamedTuple):
     dir: Vector2
     len: float
 
-    def on_grid(self, grid: Grid[Tile]):
+    def get_tiles(self, grid: Grid[Tile]) -> Generator[Tuple[Tile, Point, float], None, None]:
         point = self.pos
         for l in range(int(self.len)):
-            yield Point(*point).on_grid(grid), l
-            point = v_add(self.pos, self.dir)
-        yield self.end.on_grid(grid), self.len
+            if point.on_grid(grid):
+                yield point.get_tile(grid), point, l
+                point = Point(*v_add(self.pos, self.dir))
+            else:
+                break
+        yield self.end.get_tile(grid), self.end, self.len
 
 
 class Rectangle(NamedTuple):
@@ -54,7 +60,7 @@ class Rectangle(NamedTuple):
     def intersect(self, other) -> bool:
         return intersect(self, other)
 
-    def on_grid(self, grid: Grid[Tile]) -> Iterator[Tile]:
+    def get_tiles(self, grid: Grid[Tile]) -> Iterator[Tile]:
         _min = v_max(self.min(), (0, 0))
         _max = v_min(self.max(), (len(grid), len(grid[0])))
         return (elm for row in zip(*grid[_min[0]:_max[0]])[_min[1]:_max[1]] for elm in row)

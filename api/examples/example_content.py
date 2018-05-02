@@ -37,7 +37,18 @@ class ExampleContentGraphics(AutoGraphicsComponent[ExampleContent]):
 
 from api.physics.component import AutoPhysicsComponent, physics_for
 from api.utilities.geometry import Rectangle
-from .example_tile_grid import Tile, t_air, t_wall
+from api.utilities.tile_grid import Tile, alignment_correction
+from .example_tile_grid import t_air, t_wall
+
+
+class StaticRayHit(NamedTuple):
+    ray: Ray
+    tile: Tile
+    point: Point
+    distance: float
+
+    def shorten_ray(self) -> Ray:
+        return Ray(self.ray.pos, self.point, self.ray.dir, self.distance)
 
 
 @physics_for(ExampleContent)
@@ -45,7 +56,7 @@ class ExampleContentPhysics(AutoPhysicsComponent[ExampleContent]):
     def __init__(self, target: ExampleContent):
         super().__init__(target)
 
-    def update(self, delta_time: float, g: Vector2=Vector2(0, -1)) -> None:
+    def update(self, delta_time: float, g: Vector2=Vector2(-1, -1)) -> None:
         self.target.contact_points.clear()
         bounding_box = Rectangle(self.target.position, self.target.size)
 
@@ -53,30 +64,30 @@ class ExampleContentPhysics(AutoPhysicsComponent[ExampleContent]):
         h_trans, v_trans = translation = v_mul(self.velocity, delta_time)
         h_rays, v_rays = bounding_box.directional_projection(v_norm(translation), v_len(translation))
 
-        hit_sort = list(filter(bool, map(self.static_ray_hit, h_rays)))
-        h_absorb = bool(hit_sort)
+        hits_sorted = list(sorted(filter(bool, map(self.static_ray_hit, h_rays)), key=lambda hit: hit.distance))
+        h_absorb = bool(hits_sorted)
         if h_absorb:
-            hit_sort.sort(key=lambda tl: tl[1])
-            r, t, h_trans = hit_sort[0]
+            hit = hits_sorted[0]
+            # select closest hit distance and correct it to align with tile
+            h_trans = hit.ray.dir.x * hit.distance + alignment_correction(hit.point.x, hit.ray.dir.x)
 
-        hit_sort = list(filter(bool, map(self.static_ray_hit, v_rays)))
-        v_absorb = bool(hit_sort)
+        hits_sorted = list(sorted(filter(bool, map(self.static_ray_hit, v_rays)), key=lambda hit: hit.distance))
+        v_absorb = bool(hits_sorted)
         if v_absorb:
-            hit_sort.sort(key=lambda rtl: rtl[-1])
-            self.target.contact_points.extend((r.pos for r, t, l in hit_sort))
-            r, t, v_trans = hit_sort[0]
+            self.target.contact_points.extend((hit.ray.pos for hit in hits_sorted))
+            hit = hits_sorted[0]
+            v_trans = hit.ray.dir.y * hit.distance + alignment_correction(hit.point.y, hit.ray.dir.y)
 
-        self.target.position = Point(*v_add(Vector2(h_trans, v_trans), self.target.position))
+        self.target.position = Point(*v_add(self.target.position, (h_trans, v_trans)))
         # todo observer for absorbing velocity
         h_vel, v_vel = self.velocity
         if h_absorb:
-            h_vel = 0
+            h_vel = -h_vel
         if v_absorb:
-            v_vel = 0
+            v_vel = -v_vel
         self.velocity = Vector2(h_vel, v_vel)
 
-
-    def static_ray_hit(self, ray: Ray) -> Tuple[Ray, Tile, float]:
-        for tl in ray.on_grid(self.target.scene.tile_grid):
-            if tl[0] == t_wall:
-                return ray, tl[0], tl[1]
+    def static_ray_hit(self, ray: Ray) -> StaticRayHit:
+        for tile, point, distance in ray.get_tiles(self.target.scene.tile_grid):
+            if tile == t_wall:
+                return StaticRayHit(ray, tile, point, distance)

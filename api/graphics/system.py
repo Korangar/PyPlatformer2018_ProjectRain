@@ -188,6 +188,6 @@ def _handle_content_removed(msg: SceneContent):
 
 
 # EventHandler assignment
-on_active_scene_changed.observe(_handle_scene_change)
-on_scene_content_added.observe(_handle_content_added)
-on_scene_content_removed.observe(_handle_content_removed)
+on_active_scene_changed.add(_handle_scene_change)
+on_scene_content_added.add(_handle_content_added)
+on_scene_content_removed.add(_handle_content_removed)
