@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/api/utilities/vector.py" line="27" />
+  <component name="AnalysisUIOptions">
+    <option name="AUTOSCROLL_TO_SOURCE" value="true" />
+    <option name="SPLITTER_PROPORTION" value="0.34099153" />
+    <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1881721d-bf52-4905-85d2-ea9d2c652fb5" name="Default" comment="" />
@@ -13,40 +15,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="PyPlatformer2018_ProjectRain" />
+    <favorites_list name="PyPlatformer2018_ProjectRain">
+      <favorite_root url="file://$PROJECT_DIR$/player/player.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.7723312">
+    <splitter split-orientation="horizontal" split-proportion="0.5571934">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
+        <splitter split-orientation="vertical" split-proportion="0.7124183">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/player/player.py">
+              <file leaf-file-name="fancy_gamecode.py" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/fancy_gamecode.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="119">
-                      <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="jump_off_wall.py" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/player/states/jump_off_wall.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="221">
-                      <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+                    <state relative-caret-position="486">
+                      <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
                       <folding>
-                        <element signature="e#0#33#0" expanded="true" />
+                        <element signature="e#0#35#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="shoot.py" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/player/states/shoot.py">
+              <file leaf-file-name="graphics.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/graphics.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="119">
-                      <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+                    <state relative-caret-position="214">
+                      <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+                      <folding>
+                        <element signature="e#0#104#0" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -55,14 +53,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="_reusable_transitions.py" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/player/states/_reusable_transitions.py">
+              <file leaf-file-name="event_id.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/pre_alpha_tier/event_id.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-836">
-                      <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-                      <folding>
-                        <element signature="e#0#43#0" expanded="true" />
-                      </folding>
+                    <state relative-caret-position="204">
+                      <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
                     </state>
                   </provider>
                 </entry>
@@ -72,14 +67,14 @@
         </splitter>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/player/states/__init__.py">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="graphics.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/player/components/graphics.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+                <state relative-caret-position="261">
+                  <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
                   <folding>
-                    <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#0#104#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -99,8 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.pos.pos</find>
-      <find>Union</find>
       <find>Ray.create</find>
       <find>shape2</find>
       <find>go</find>
@@ -111,6 +104,26 @@
       <find>StateIdType</find>
       <find>_StateType</find>
       <find>transition_factory__</find>
+      <find>api.core.</find>
+      <find>api.core</find>
+      <find>from api.sacs_engine.core import</find>
+      <find>from api.sacs_engine.core.systems.graphics import CAmera</find>
+      <find>from api.sacs_engine.core.systems.graphics import f</find>
+      <find>from api.sacs_engine.core.systems.graphics import</find>
+      <find>from api.sacs_engine.prefab. import FpsOverlay</find>
+      <find>from api.sacs_engine.prefab import</find>
+      <find>from api.sacs_engine.core.systems.state import Transition</find>
+      <find>from api.sacs_engine.core.systems.state import State</find>
+      <find>gfxdraw</find>
+      <find>_systems</find>
+      <find>look_direction</find>
+      <find>input_data.move</find>
+      <find>StaticRayHit</find>
+      <find>ray</find>
+      <find>rectangle(</find>
+      <find>rectangle</find>
+      <find>PreAlphaTierEvent</find>
+      <find>player</find>
     </findStrings>
     <replaceStrings>
       <replace>.pos</replace>
@@ -124,6 +137,21 @@
       <replace>_StateType</replace>
       <replace>StateIdType</replace>
       <replace>transition__</replace>
+      <replace>api.sacs_engine.core.</replace>
+      <replace>api.sacs_engine.core</replace>
+      <replace>from api.sacs_engine.core.systems.graphics.camera import Camera</replace>
+      <replace>from api.sacs_engine.core.systems.graphics.drawing import f</replace>
+      <replace>from api.sacs_engine.prefab.debug import</replace>
+      <replace>from api.sacs_engine.core.systems.state.tranition import Transition</replace>
+      <replace>from api.sacs_engine.core.systems.state.state import State</replace>
+      <replace>draw</replace>
+      <replace />
+      <replace>StaticRayCastResult</replace>
+      <replace>Rectangle(</replace>
+      <replace>Rectangle</replace>
+      <replace>PreAlphaTier</replace>
+      <replace>Event</replace>
+      <replace>actor</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -132,80 +160,177 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/humanplayer.py" />
-        <option value="$PROJECT_DIR$/human_player_graphics.py" />
-        <option value="$PROJECT_DIR$/player/human_player_graphics.py" />
-        <option value="$PROJECT_DIR$/player/human_player_physics.py" />
-        <option value="$PROJECT_DIR$/api/events/observer.py" />
-        <option value="$PROJECT_DIR$/api/events/evevnt_queue.py" />
-        <option value="$PROJECT_DIR$/api/events/event.py" />
-        <option value="$PROJECT_DIR$/api/events/eventdelegate.py" />
-        <option value="$PROJECT_DIR$/api/events/event_queue.py" />
-        <option value="$PROJECT_DIR$/api/utilities/state.py" />
-        <option value="$PROJECT_DIR$/api/scene/scene_object.py" />
-        <option value="$PROJECT_DIR$/api/scene/scene_object.pyi" />
-        <option value="$PROJECT_DIR$/player/human_player_state.py" />
-        <option value="$PROJECT_DIR$/player/physics_component.py" />
-        <option value="$PROJECT_DIR$/player/human_player.py" />
-        <option value="$PROJECT_DIR$/player/states.py" />
-        <option value="$PROJECT_DIR$/player/states/states.py" />
-        <option value="$PROJECT_DIR$/player/__init__.py" />
-        <option value="$PROJECT_DIR$/api/physics/system.py" />
-        <option value="$PROJECT_DIR$/api/physics/component.py" />
-        <option value="$PROJECT_DIR$/__main__.py" />
-        <option value="$PROJECT_DIR$/api/scene/system.py" />
-        <option value="$PROJECT_DIR$/api/prefab/animation_agents/parenting_agent.py" />
-        <option value="$PROJECT_DIR$/api/graphics/camera.py" />
-        <option value="$PROJECT_DIR$/api/graphics/component.py" />
-        <option value="$PROJECT_DIR$/api/events/event_stream.py" />
-        <option value="$PROJECT_DIR$/api/examples/_some_transition.py" />
-        <option value="$PROJECT_DIR$/player/entity.py" />
-        <option value="$PROJECT_DIR$/api/state/state_machine.py" />
-        <option value="$PROJECT_DIR$/api/state/state.py" />
-        <option value="$PROJECT_DIR$/api/state/transition.py" />
-        <option value="$PROJECT_DIR$/player/components/physics.py" />
-        <option value="$PROJECT_DIR$/player/components.py" />
-        <option value="$PROJECT_DIR$/player/components/graphics.py" />
-        <option value="$PROJECT_DIR$/api/scene/content.py" />
-        <option value="$PROJECT_DIR$/api/state/machine.py" />
-        <option value="$PROJECT_DIR$/api/prefab/debug/debug_point.py" />
-        <option value="$PROJECT_DIR$/api/prefab/debug/camera_marker.py" />
-        <option value="$PROJECT_DIR$/api/prefab/debug/point_marker.py" />
-        <option value="$PROJECT_DIR$/api/events/event_delegate.py" />
-        <option value="$PROJECT_DIR$/player/states/reused_transitions.py" />
-        <option value="$PROJECT_DIR$/player/states/_reused_transitions.py" />
-        <option value="$PROJECT_DIR$/player/states/__init__.py" />
-        <option value="$PROJECT_DIR$/player/states/_reusable_transitions.py" />
-        <option value="$PROJECT_DIR$/player/states/aiming.py" />
-        <option value="$PROJECT_DIR$/player/states/on_ground.py" />
-        <option value="$PROJECT_DIR$/player/states/in_air.py" />
-        <option value="$PROJECT_DIR$/player/states/jump.py" />
+        <option value="$PROJECT_DIR$/player/event_id.py" />
+        <option value="$PROJECT_DIR$/player/components/state/state_id.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/vector.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/input/component.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/graphics/_system.py" />
+        <option value="$PROJECT_DIR$/player/components/state/__init__.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/graphics/drawing/_api.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/state/machine.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/state/transition.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/events/event_stream.py" />
+        <option value="$PROJECT_DIR$/player/components/state/state_transitions.py" />
+        <option value="$PROJECT_DIR$/api/xinput/xinput_game_pad.py" />
+        <option value="$PROJECT_DIR$/player/data.pyi" />
+        <option value="$PROJECT_DIR$/api/sax_engine/events/event_delegate.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/prefabs/background/tile_grid_renderer.py" />
+        <option value="$PROJECT_DIR$/player/components/state/states.py" />
+        <option value="$PROJECT_DIR$/player/components/state/transitions.py" />
         <option value="$PROJECT_DIR$/player/player.py" />
-        <option value="$PROJECT_DIR$/player/states/jump_off_wall.py" />
-        <option value="$PROJECT_DIR$/player/states/shoot.py" />
+        <option value="$PROJECT_DIR$/player/components/input.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/Rectangle.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/Ray.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/collision.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/circle.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/__init__.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/_collision.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/_examples/example_content.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/point.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/graphics/projection.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/tile_grid.py" />
+        <option value="$PROJECT_DIR$/prefabs/background/tile_grid_renderer.py" />
+        <option value="$PROJECT_DIR$/__main__.py" />
+        <option value="$PROJECT_DIR$/player/components/physics.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/ray.py" />
+        <option value="$PROJECT_DIR$/prefabs/utilities/line.py" />
+        <option value="$PROJECT_DIR$/player/components/state/fancy_gamecode.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/event_id.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/state_id.py" />
+        <option value="$PROJECT_DIR$/start_scene.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/__init__.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/physics.py" />
+        <option value="$PROJECT_DIR$/player/data.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/data.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/pre_alpha_tier.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/state/states.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/state/transitions.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/state/fancy_gamecode.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/graphics.py" />
+        <option value="$PROJECT_DIR$/player/components/graphics.py" />
       </list>
     </option>
   </component>
   <component name="NamedScopeManager">
-    <scope name="api_engine" pattern="file[PyPlatformer]:api/scene/*||file[PyPlatformer]:api/scene//*" />
+    <scope name="api_engine" pattern="file[PyPlatformer]:api/sacs_engine/core/*||file[PyPlatformer]:api/sacs_engine/core//*" />
+    <scope name="Player" pattern="file[PyPlatformer]:player//*" />
+    <scope name="PreAlphaTier" pattern="file[PyPlatformer]:pre_alpha_tier/*||file[PyPlatformer]:pre_alpha_tier//*" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Player" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+              <item name="pre_alpha_tier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+              <item name="pre_alpha_tier" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
+              <item name="pre_alpha_tier" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="api_engine">
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="PyPlatformer" type="cbb8eebc:String" user="PyPlatformer" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Player">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+              <item name="player" type="cbb8eebc:String" user="player" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+              <item name="player" type="cbb8eebc:String" user="player" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+              <item name="player" type="cbb8eebc:String" user="player" />
+              <item name="components" type="cbb8eebc:String" user="components" />
+              <item name="state" type="cbb8eebc:String" user="state" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="PreAlphaTier">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+              <item name="pre_alpha_tier" type="cbb8eebc:String" user="pre_alpha_tier" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
+              <item name="pre_alpha_tier" type="cbb8eebc:String" user="pre_alpha_tier" />
+              <item name="components" type="cbb8eebc:String" user="components" />
             </path>
           </expand>
           <select />
@@ -231,55 +356,28 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyPlatformer2018_ProjectRain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyPlatformer2018_ProjectRain" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="invalidate&#9;ACTION&#9;InvalidateCaches&#10;cache&#9;ACTION&#9;InvalidateCaches&#10;clear&#9;ACTION&#9;context.clear&#10;Union&#9;null&#9;null&#10;searc&#9;ACTION&#9;SearchEverywhere" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PyPlatforming1" />
+    <property name="SearchEverywhereHistoryKey" value="replace&#9;ACTION&#9;ReplaceInPath&#10;invalida&#9;ACTION&#9;InvalidateCaches&#10;invalidate&#9;ACTION&#9;InvalidateCaches&#10;cache&#9;ACTION&#9;InvalidateCaches&#10;clear&#9;ACTION&#9;context.clear&#10;Union&#9;null&#9;null&#10;searc&#9;ACTION&#9;SearchEverywhere" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/sacs_engine" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\states" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\prefab\debug" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\input" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\examples" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\components" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\states" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\sax_engine\geometry" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain" />
       <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\state" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\prefab\background" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\components\state" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\sax_engine\core\systems\graphics\_unit_tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\pre_alpha_tier" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\input" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\states" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,7 +501,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests in test_system.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in _unit_tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PyPlatformer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -413,7 +511,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/api/_unit_tests/graphics/test_system.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/api/sax_engine/core/systems/graphics/_unit_tests/_unit_tests.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="api._tests" type="tests" factoryName="Unittests">
@@ -427,7 +525,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;_unit_tests&quot;" />
+      <option name="_new_target" value="&quot;api.sax_engine._unit_tests&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <list>
@@ -436,16 +534,16 @@
       <item itemvalue="Python tests.api._tests" />
       <item itemvalue="Python._context_swaps" />
       <item itemvalue="Python._split_screen" />
-      <item itemvalue="Python tests.Unittests in test_system.py" />
+      <item itemvalue="Python tests.Unittests in _unit_tests.py" />
       <item itemvalue="Python._loop_and_physics" />
       <item itemvalue="Python.__init__" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.__init__" />
         <item itemvalue="Python._loop_and_physics" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python._split_screen" />
-        <item itemvalue="Python tests.Unittests in test_system.py" />
+        <item itemvalue="Python tests.Unittests in _unit_tests.py" />
         <item itemvalue="Python._context_swaps" />
       </list>
     </recent_temporary>
@@ -461,6 +559,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522325436247</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -495,48 +594,39 @@
       <configuration name="Unittests in test_system.py" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.17228661" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5217865" visible="true" weight="0.09594883" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.208061" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32897604" />
+      <window_info anchor="right" x="2003" y="36" width="1722" height="818" id="Inspection Results" order="4" type="FLOATING" weight="0.3955224" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32934782" />
-      <window_info anchor="bottom" x="2100" y="629" width="1527" height="361" id="Run" order="2" type="WINDOWED" weight="0.32391304" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" x="2094" y="35" width="1527" height="361" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32391304" />
+      <window_info id="Structure" order="1" sideWeight="0.47712418" side_tool="true" weight="0.17377399" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32934782" />
-      <window_info active="true" id="Favorites" order="2" sideWeight="0.50108933" side_tool="true" visible="true" weight="0.17228661" />
-      <window_info anchor="bottom" x="1918" y="693" width="1906" height="342" id="Debug" order="3" type="WINDOWED" weight="0.23695652" />
+      <window_info id="Favorites" order="2" sideWeight="0.47821352" side_tool="true" visible="true" weight="0.09594883" />
+      <window_info active="true" anchor="bottom" x="1918" y="693" width="1906" height="342" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.23695652" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" x="2100" y="629" width="1527" height="361" id="Run" order="2" type="WINDOWED" weight="0.32391304" />
-      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32934782" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="bottom" x="1918" y="693" width="1906" height="342" id="Debug" order="3" type="WINDOWED" weight="0.23695652" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32934782" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -558,358 +648,522 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="191" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>v_rays[0].end.y &lt; 52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_rays[0].pos.y &lt; 52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ray.end.y &lt; 52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(rays) &gt; 0 and rays[0].end.y &lt; 52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_rays[0].pos &lt; 52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_rays[0].</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ray.pos.y &lt; 52</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_absorb</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.target.position.y &lt; 53</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>self.target.physics_data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list(v_rays)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list(all_hits)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_rays</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(v_rays)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>all_hits</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_len(player.shared_data.look_direction)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>v_len(tmp)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/prefab/background/tile_grid_renderer.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/events/event_stream.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="170">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/utilities/tile_grid.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/state/transition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="272">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
+    <entry file="file://$PROJECT_DIR$/api/xinput/_ctypes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="313" column="8" lean-forward="true" selection-start-line="313" selection-start-column="8" selection-end-line="313" selection-end-column="8" />
+        <state relative-caret-position="376">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="e#29#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-806570153/builtins.py">
+    <entry file="file://$PROJECT_DIR$/player/data.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="4401" column="8" selection-start-line="4401" selection-start-column="8" selection-end-line="4401" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/examples/_loop_and_physics.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/events/event_delegate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="340">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/input/component.py" />
-    <entry file="file://$PROJECT_DIR$/api/input/system.py" />
-    <entry file="file://$PROJECT_DIR$/api/input/xinput/xinput_game_pad.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/utilities/state.py" />
-    <entry file="file://$PROJECT_DIR$/api/input/xinput/xinput_wrapper.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/scene/scene_object.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="301">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/scene/scene_object.pyi">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/vector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="66">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/measurement/rate_tracker.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="144">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/in_air.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/physics_component.py" />
-    <entry file="file://$PROJECT_DIR$/player/states/states.py" />
-    <entry file="file://$PROJECT_DIR$/api/events/event.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/circle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/measurement/time.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/physics/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="1325" selection-start-line="1325" selection-end-line="1325" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/physics/component.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/prefab/animation_agents/parenting_agent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/graphics/camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/scene/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/events/event_stream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/examples/_some_transition.py" />
-    <entry file="file://$PROJECT_DIR$/api/state/transition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/components/physics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/components/graphics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/shooting_midair.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/aiming_midair.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/state/state.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/prefab/debug/debug_point.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/prefab/debug/fps_overlay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/prefab/debug/camera_marker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/graphics/component.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/prefab/debug/point_marker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/events/event_delegate.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="643">
+          <caret line="119" lean-forward="true" selection-start-line="117" selection-end-line="119" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/utilities/assertion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="681" selection-start-line="681" selection-end-line="681" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/tile_grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/_examples/example_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prefabs/background/tile_grid_renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/state/machine.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/ray.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="258">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/_reusable_transitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/scene/content.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/in_air.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/projection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/aiming.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="309">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/jump.py">
+    <entry file="file://$PROJECT_DIR$/prefabs/utilities/line.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/physics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="89" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="29" selection-end-column="89" />
+        <state relative-caret-position="636">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/on_ground.py">
+    <entry file="file://$PROJECT_DIR$/player/event_id.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
+        <state>
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/state_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/player/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/jump_off_wall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="-89">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/states/shoot.py">
+    <entry file="file://$PROJECT_DIR$/api/xinput/xinput_game_pad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="136">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#52#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/events/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/state/machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/pre_alpha_tier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_scene.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/states.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/transitions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/physics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="50" column="71" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/state_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/event_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/fancy_gamecode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/state/transitions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/state/fancy_gamecode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/state/states.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/graphics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/graphics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -918,7 +1172,7 @@
     <states>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
-          <last-edited>api_engine</last-edited>
+          <last-edited>PreAlphaTier</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -928,6 +1182,8 @@
           </splitter-proportions>
           <order>
             <scope name="api_engine" />
+            <scope name="Player" />
+            <scope name="PreAlphaTier" />
           </order>
         </settings>
       </state>

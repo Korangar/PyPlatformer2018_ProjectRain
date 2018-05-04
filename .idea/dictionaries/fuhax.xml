@@ -1,10 +1,19 @@
 <component name="ProjectDictionaryState">
   <dictionary name="fuhax">
     <words>
+      <w>argtypes</w>
+      <w>colliders</w>
       <w>freetype</w>
+      <w>gamepad</w>
+      <w>gamepads</w>
+      <w>lenq</w>
       <w>pygame</w>
+      <w>resttype</w>
       <w>rgba</w>
       <w>xinput</w>
+      <w>xinputgamepad</w>
+      <w>xinputstate</w>
+      <w>xinputvibration</w>
     </words>
   </dictionary>
 </component>
