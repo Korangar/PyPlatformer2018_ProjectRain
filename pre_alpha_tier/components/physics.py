@@ -1,4 +1,4 @@
-from api.sax_engine.geometry import Point, Rectangle, multi_ray_cast
+from api.sax_engine.geometry import Point, Rectangle, multi_ray_cast, register_shape_on_grid, remove_shape_from_grid
 from api.sax_engine.vector import *
 from api.sax_engine.core.systems.physics.component import AutoPhysicsComponent, physics_for
 from api.sax_engine.tile_grid import alignment_correction
@@ -6,6 +6,7 @@ from api.sax_engine._examples.example_tile_grid import t_wall
 
 from ..pre_alpha_tier import PreAlphaTier
 from ..event_id import EventId
+
 
 blocked_tiles = [t_wall]
 
@@ -51,8 +52,22 @@ class PlayerPhysics(AutoPhysicsComponent[PreAlphaTier]):
                                          all_hits[-1].ray != v_rays[-1]):
             self.target.push_event(EventId.watch_out)
 
+        # grid debugging
+        # ----------------------------------------------------
+        # from api.sax_engine.core import add_content_to_scene
+        # from prefabs.debug import PointMarker
+        # min_x, min_y = bounding_box.min().to_int()
+        # max_x, max_y = bounding_box.max().to_int()
+        # for x in range(min_x, max_x + 1):
+        #     for y in range(min_y, max_y + 1):
+        #         p = Point(*v_add((x, y), (0.5, 0.5)))
+        #         add_content_to_scene(self.target.scene, PointMarker(p, (255, 0, 0), self.target.scene.delta_time))
+        # ----------------------------------------------------
+
         # set new position
+        remove_shape_from_grid(tile_grid, bounding_box, self.target)
         self.target.position = Point(*v_add(self.target.position, (h_trans, v_trans)))
+        register_shape_on_grid(tile_grid, bounding_box, self.target)
 
         # adjust velocity based on collision data
         h_vel, v_vel = physics_data.velocity

@@ -1,7 +1,7 @@
 from api.sax_engine.core.systems.graphics.component import AutoGraphicsComponent, graphics_for, _Content
 from api.sax_engine.core.systems.graphics.camera import Camera
 from api.sax_engine.core.systems.graphics.drawing import *
-from api.sax_engine.geometry import Rectangle
+from api.sax_engine.geometry import Rectangle, Point
 from api.sax_engine.vector import *
 
 from ..state_id import StateId
@@ -23,7 +23,6 @@ class PlayerGraphics(AutoGraphicsComponent[Player]):
             r_min = camera.project(r.min()).to_int()
             r_max = camera.project(r.max()).to_int()
             draw.line(camera.render_target, *r_min, *r_max, C_D_GRAY)
-            draw.circle(camera.render_target, *r_min, 2, C_BLUE)
 
             # todo make an origin point for aiming or something
             o_xy = Vector2(*v_div(v_add(r_min, r_max), 2)).to_int()

@@ -4,10 +4,10 @@ from api.sax_engine.core.systems.graphics.component import graphics_for
 from api.sax_engine.core.systems.graphics.drawing import f_default
 from api.sax_engine.geometry import Point
 
-__all__ = ['TextContent']
+__all__ = ['Text']
 
 
-class TextContent(ContentEntity):
+class Text(ContentEntity):
     def __init__(self, position: Point, text: str="Hello World!") -> None:
         super().__init__(position)
         self.text = text
@@ -16,9 +16,9 @@ class TextContent(ContentEntity):
         self.size = 20
 
 
-@graphics_for(TextContent)
+@graphics_for(Text)
 class TextGraphics(AutoGraphicsComponent):
-    def __init__(self, target: TextContent):
+    def __init__(self, target: Text):
         super().__init__(target)
         self.font = f_default(self.target.size)
 

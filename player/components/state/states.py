@@ -109,6 +109,7 @@ def get_state__aiming(player: Player):
 def get_state__shoot(player: Player):
     state = StateId.shoot
     transitions = (
+        transition__aiming(player, enable=True),
         transition__on_ground(player),
         transition__in_air(player)
     )
@@ -118,7 +119,7 @@ def get_state__shoot(player: Player):
 
     # create actions
     def on_enter(id_: StateId):
-        pass
+        shooting_boilerplate(player)
 
     state.on_enter += on_enter
 
@@ -182,7 +183,7 @@ def get_state__jump_of_wall(player: Player):
             else:
                 x, y = player.position
                 p = Point(x + player.physics_data.size, y)
-            add_content_to_scene(player.scene, PointMarker(p, (255, 0, 0)))
+            add_content_to_scene(player.scene, PointMarker(p, (255, 0, 0), 5))
 
     state.on_update += on_enter
 

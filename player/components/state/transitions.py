@@ -56,7 +56,7 @@ def transition__aiming(player: Player, enable=True, return_to=None) -> Transitio
 
     if enable:
         def t_check(events: Sequence[Event]) -> bool:
-            return bool(events)
+            return bool(events) or player.input_data.gamepad.input_state.trigger_r > 0.5
     else:
         def t_check(events: Sequence[Event]) -> bool:
             return bool(events)

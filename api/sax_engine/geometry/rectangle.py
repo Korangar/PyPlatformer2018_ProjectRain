@@ -1,4 +1,4 @@
-from api.sax_engine.tile_grid import Tile, Grid
+from api.sax_engine.tile_grid import Tile, Grid, grid_size
 from api.sax_engine.vector import *
 
 from .point import *
@@ -24,10 +24,13 @@ class Rectangle(NamedTuple):
         from .shape_collision import intersect
         return intersect(self, other)
 
-    def get_tiles(self, grid: Grid[Tile]) -> Iterator[Tile]:
-        _min = v_max(self.min(), (0, 0))
-        _max = v_min(self.max(), (len(grid), len(grid[0])))
-        return (elm for row in zip(*grid[_min[0]:_max[0]])[_min[1]:_max[1]] for elm in row)
+    def get_tiles(self, grid: Grid[Tile]) -> Iterator[Tuple[Tile, Point]]:
+        min_x, min_y = v_max(self.min().to_int(), (0, 0))
+        max_x, max_y = v_min(v_add(self.max().to_int(), (1, 1)), grid_size(grid))
+        grid_crop = tuple(zip(*grid[min_x: max_x]))[min_y:max_y]
+        return ((elm, Point(min_x+x, min_y+y))
+                for y, row in enumerate(grid_crop)
+                for x, elm in enumerate(row))
 
     def directional_projection(self,
                                translation: float,

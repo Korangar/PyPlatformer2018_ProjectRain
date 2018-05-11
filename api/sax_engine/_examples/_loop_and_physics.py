@@ -42,9 +42,9 @@ if __name__ == "__main__":
                      grid_locks_view=True)
     scene_system.add_content_to_scene(scene0, camera0)
 
-    from prefabs.utilities import TextContent
-    scene_system.add_content_to_scene(scene0, TextContent(Point(*map_mid), "Fun with physics!"))
-    scene_system.add_content_to_scene(scene0, TextContent(Point(55, 0), "Rock bottom!"))
+    from prefabs.utilities import Text
+    scene_system.add_content_to_scene(scene0, Text(Point(*map_mid), "Fun with physics!"))
+    scene_system.add_content_to_scene(scene0, Text(Point(55, 0), "Rock bottom!"))
 
     scene_system.change_active_scene(scene0)
 

@@ -20,6 +20,18 @@ class PlayerPhysics(AutoPhysicsComponent[Player]):
         delta_time = self.target.scene.delta_time
         bounding_box = Rectangle(self.target.position, physics_data.size)
 
+        # grid debugging
+        # ----------------------------------------------------
+        # from api.sax_engine.core import add_content_to_scene
+        # from prefabs.debug import PointMarker
+        # min_x, min_y = bounding_box.min().to_int()
+        # max_x, max_y = bounding_box.max().to_int()
+        # for x in range(min_x, max_x+1):
+        #     for y in range(min_y, max_y+1):
+        #         p = Point(*v_add((x, y), (0.5, 0.5)))
+        #         add_content_to_scene(self.target.scene, PointMarker(p, (255, 0, 0), self.target.scene.delta_time))
+        # ----------------------------------------------------
+
         # calculate new velocity from acceleration
         physics_data.velocity = Vector2(*v_add(physics_data.velocity, v_mul(g, delta_time)))
 

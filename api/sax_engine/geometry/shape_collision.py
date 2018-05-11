@@ -6,7 +6,7 @@ from .ray import *
 from .circle import *
 from .rectangle import *
 
-__all__ = ['intersect', 'Shape']
+__all__ = ['intersect', 'Shape', 'register_shape_on_grid', 'remove_shape_from_grid']
 
 
 # Union-type for all shapes
@@ -59,6 +59,17 @@ def intersect(shape1: Rectangle, shape2: Shape) -> bool:
         return False
 
 
-def register_shape_on_grid(shape: Shape, grid: Grid[Tile]):
+def register_shape_on_grid(grid: Grid[Tile], shape: Shape, value: Any=None):
+    # todo remove the duck!
     for tile in shape.get_tiles(grid):
-        tile.colliders.add(shape)
+        if isinstance(tile, Sequence):
+            tile = tile[0]
+        tile.colliders.add(value if value else shape)
+
+
+def remove_shape_from_grid(grid: Grid[Tile], shape: Shape, value: Any=None):
+    for tile in shape.get_tiles(grid):
+        if isinstance(tile, Sequence):
+            tile = tile[0]
+        if shape in tile.colliders:
+            tile.colliders.remove(value if value else shape)

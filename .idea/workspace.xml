@@ -20,69 +20,100 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5571934">
-      <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.7124183">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="fancy_gamecode.py" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/fancy_gamecode.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="486">
-                      <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-                      <folding>
-                        <element signature="e#0#35#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="graphics.py" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/graphics.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="214">
-                      <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
-                      <folding>
-                        <element signature="e#0#104#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="event_id.py" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/pre_alpha_tier/event_id.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="204">
-                      <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="graphics.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/player/components/graphics.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
-                  <folding>
-                    <element signature="e#0#104#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="rectangle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_scene.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start_scene.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="9" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/map.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shape_collision.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1026">
+              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="point.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/point.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="physics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/components/physics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="component.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/component.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="component.pyi" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/component.pyi">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="states.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/components/state/states.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3060">
+              <caret line="172" column="40" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -160,13 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/player/event_id.py" />
-        <option value="$PROJECT_DIR$/player/components/state/state_id.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/vector.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/input/component.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/graphics/_system.py" />
-        <option value="$PROJECT_DIR$/player/components/state/__init__.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/core/systems/graphics/drawing/_api.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/core/systems/state/machine.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/core/systems/state/transition.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/events/event_stream.py" />
@@ -175,8 +199,6 @@
         <option value="$PROJECT_DIR$/player/data.pyi" />
         <option value="$PROJECT_DIR$/api/sax_engine/events/event_delegate.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/prefabs/background/tile_grid_renderer.py" />
-        <option value="$PROJECT_DIR$/player/components/state/states.py" />
-        <option value="$PROJECT_DIR$/player/components/state/transitions.py" />
         <option value="$PROJECT_DIR$/player/player.py" />
         <option value="$PROJECT_DIR$/player/components/input.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/geometry.py" />
@@ -187,22 +209,14 @@
         <option value="$PROJECT_DIR$/api/sax_engine/geometry/__init__.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/geometry/_collision.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/_examples/example_content.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/geometry/point.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/core/systems/graphics/projection.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py" />
         <option value="$PROJECT_DIR$/api/sax_engine/tile_grid.py" />
         <option value="$PROJECT_DIR$/prefabs/background/tile_grid_renderer.py" />
         <option value="$PROJECT_DIR$/__main__.py" />
-        <option value="$PROJECT_DIR$/player/components/physics.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py" />
-        <option value="$PROJECT_DIR$/api/sax_engine/geometry/ray.py" />
         <option value="$PROJECT_DIR$/prefabs/utilities/line.py" />
-        <option value="$PROJECT_DIR$/player/components/state/fancy_gamecode.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/event_id.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/state_id.py" />
-        <option value="$PROJECT_DIR$/start_scene.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/components/__init__.py" />
-        <option value="$PROJECT_DIR$/pre_alpha_tier/components/physics.py" />
         <option value="$PROJECT_DIR$/player/data.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/data.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/pre_alpha_tier.py" />
@@ -210,7 +224,24 @@
         <option value="$PROJECT_DIR$/pre_alpha_tier/components/state/transitions.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/components/state/fancy_gamecode.py" />
         <option value="$PROJECT_DIR$/pre_alpha_tier/components/graphics.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/point.py" />
+        <option value="$PROJECT_DIR$/player/components/state/transitions.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/_examples/example_tile_grid.py" />
+        <option value="$PROJECT_DIR$/prefabs/debug/camera_marker.py" />
+        <option value="$PROJECT_DIR$/player/components/state/states.py" />
+        <option value="$PROJECT_DIR$/prefabs/debug/line_marker.py" />
+        <option value="$PROJECT_DIR$/start_scene.py" />
+        <option value="$PROJECT_DIR$/prefabs/utilities/text.py" />
         <option value="$PROJECT_DIR$/player/components/graphics.py" />
+        <option value="$PROJECT_DIR$/prefabs/debug/__init__.py" />
+        <option value="$PROJECT_DIR$/prefabs/debug/point_marker.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/ray.py" />
+        <option value="$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py" />
+        <option value="$PROJECT_DIR$/player/components/physics.py" />
+        <option value="$PROJECT_DIR$/pre_alpha_tier/components/physics.py" />
+        <option value="$PROJECT_DIR$/player/components/state/fancy_gamecode.py" />
+        <option value="$PROJECT_DIR$/map.txt" />
       </list>
     </option>
   </component>
@@ -227,7 +258,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Player" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -299,19 +330,6 @@
               <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
               <item name="player" type="cbb8eebc:String" user="player" />
             </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
-              <item name="player" type="cbb8eebc:String" user="player" />
-              <item name="components" type="cbb8eebc:String" user="components" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
-              <item name="player" type="cbb8eebc:String" user="player" />
-              <item name="components" type="cbb8eebc:String" user="components" />
-              <item name="state" type="cbb8eebc:String" user="state" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -339,18 +357,7 @@
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PyPlatformer" type="cbb8eebc:String" user="PyPlatformer" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PyPlatformer" type="cbb8eebc:String" user="PyPlatformer" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PyPlatformer" type="cbb8eebc:String" user="PyPlatformer" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-              <item name="api_engine" type="cbb8eebc:String" user="api_engine" />
+              <item name="PyPlatformer2018_ProjectRain" type="cbb8eebc:String" user="PyPlatformer2018_ProjectRain" />
             </path>
           </expand>
           <select />
@@ -360,24 +367,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="replace&#9;ACTION&#9;ReplaceInPath&#10;invalida&#9;ACTION&#9;InvalidateCaches&#10;invalidate&#9;ACTION&#9;InvalidateCaches&#10;cache&#9;ACTION&#9;InvalidateCaches&#10;clear&#9;ACTION&#9;context.clear&#10;Union&#9;null&#9;null&#10;searc&#9;ACTION&#9;SearchEverywhere" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/sacs_engine" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\prefabs\debug" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\pre_alpha_tier" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player" />
+      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\input" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\sax_engine\geometry" />
       <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain" />
       <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player" />
       <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\components\state" />
       <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\sax_engine\core\systems\graphics\_unit_tests" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\pre_alpha_tier" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\api\input" />
-      <recent name="C:\Users\fuhax\Workspace\PyPlatformer2018_ProjectRain\player\states" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -429,24 +436,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="_context_swaps" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyPlatformer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api/examples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/examples/_context_swaps.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="_loop_and_physics" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyPlatformer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -460,6 +449,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/examples/_loop_and_physics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="_split_screen (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyPlatformer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api/sax_engine/_examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/sax_engine/_examples/_split_screen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -532,19 +539,19 @@
       <item itemvalue="Python.collision_shapes" />
       <item itemvalue="Python.__main__" />
       <item itemvalue="Python tests.api._tests" />
-      <item itemvalue="Python._context_swaps" />
       <item itemvalue="Python._split_screen" />
       <item itemvalue="Python tests.Unittests in _unit_tests.py" />
       <item itemvalue="Python._loop_and_physics" />
       <item itemvalue="Python.__init__" />
+      <item itemvalue="Python._split_screen (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._split_screen (1)" />
         <item itemvalue="Python._loop_and_physics" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python._split_screen" />
         <item itemvalue="Python tests.Unittests in _unit_tests.py" />
-        <item itemvalue="Python._context_swaps" />
       </list>
     </recent_temporary>
   </component>
@@ -605,27 +612,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5217865" visible="true" weight="0.09594883" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51960784" visible="true" weight="0.15700738" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.208061" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32897604" />
-      <window_info anchor="right" x="2003" y="36" width="1722" height="818" id="Inspection Results" order="4" type="FLOATING" weight="0.3955224" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" x="316" y="187" width="1284" height="701" id="Run" order="2" type="WINDOWED" weight="0.32391304" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32934782" />
-      <window_info anchor="bottom" x="2094" y="35" width="1527" height="361" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32391304" />
       <window_info id="Structure" order="1" sideWeight="0.47712418" side_tool="true" weight="0.17377399" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32934782" />
-      <window_info id="Favorites" order="2" sideWeight="0.47821352" side_tool="true" visible="true" weight="0.09594883" />
-      <window_info active="true" anchor="bottom" x="1918" y="693" width="1906" height="342" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.23695652" />
+      <window_info anchor="bottom" x="1922" y="596" width="1915" height="443" id="Debug" order="3" type="WINDOWED" weight="0.23695652" />
+      <window_info id="Favorites" order="2" sideWeight="0.48039216" side_tool="true" weight="0.14172813" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" x="2003" y="36" width="1722" height="818" id="Inspection Results" order="4" type="FLOATING" weight="0.3955224" />
       <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -648,7 +654,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="191" />
+      <option name="time" value="201" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -748,96 +754,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/events/event_stream.py">
+    <entry file="file://$PROJECT_DIR$/player/components/physics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/state/transition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/xinput/_ctypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-          <folding>
-            <element signature="e#29#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/data.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/events/event_delegate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/_system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/circle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="119" lean-forward="true" selection-start-line="117" selection-end-line="119" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/utilities/assertion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="289">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -859,9 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,19 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,65 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/point.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/ray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/projection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prefabs/utilities/line.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/components/physics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/event_id.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,9 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-89">
           <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,9 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#52#74#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,9 +844,6 @@
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/state/machine.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1019,30 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/pre_alpha_tier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start_scene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/states.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,19 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/physics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="50" column="71" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,9 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,80 +894,231 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/event_id.py">
+    <entry file="file://$PROJECT_DIR$/player/components/input.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="675">
+          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/graphics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/state/fancy_gamecode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/_examples/_split_screen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/_examples/example_tile_grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="153" column="29" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prefabs/debug/camera_marker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/player/components/state/transitions.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/drawing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prefabs/utilities/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prefabs/debug/line_marker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="63" lean-forward="true" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prefabs/debug/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/graphics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/components/physics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/pre_alpha_tier.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/player/components/state/fancy_gamecode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/components/input.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/physics/_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="209">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/physics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prefabs/debug/point_marker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/ray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/event_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/component.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/core/systems/graphics/component.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#85#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/player/components/state/states.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="3060">
+          <caret line="172" column="40" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pre_alpha_tier/components/graphics.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/shape_collision.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+        <state relative-caret-position="1026">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
           <folding>
-            <element signature="e#0#104#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/components/graphics.py">
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/point.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+        <state relative-caret-position="306">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/sax_engine/geometry/rectangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
-            <element signature="e#0#104#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_scene.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="9" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
         </state>
       </provider>
     </entry>
