@@ -26,11 +26,12 @@ def initialize():
     map_mid = v_mul(grid_size(tile_map), (0.5, 0.5))
 
     # import and create player
-    from player.player import Player
+    from game.actors.player.player import Player
 
-    from pre_alpha_tier.pre_alpha_tier import PreAlphaTier
+    from game.actors.pre_alpha_tier.pre_alpha_tier import PreAlphaTier
     for _ in range(0, 20, 4):
-        tier = PreAlphaTier(position=Point(*v_add(map_mid, (_, 0))))
+        pos = Point(*v_add(map_mid, (_, 0)))
+        tier = PreAlphaTier(position=pos)
         scene_system.add_content_to_scene(scene0, tier)
 
     from api.sax_engine.core.systems.graphics.camera import Camera
